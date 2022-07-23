@@ -1,0 +1,33 @@
+{
+    "name": "@man/superform",
+    "version": "0.0.1",
+    "description": "A First React Form Dynamic",
+    "main": "dist/cjs/index.js",
+    "module": "dist/esm/index.js",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "rm -rf dist/ && prettier --write src/ && npm run build:esm && npm run build:cjs",
+        "build:esm": "tsc",
+        "build:cjs": "tsc --module CommonJS --outDir dist/cjs"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/manvfx/superform.git"
+    },
+    "author": "Mohammad Amin Najafi",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/node": "^18.0.6",
+        "@types/react": "^18.0.15",
+        "@types/react-dom": "^18.0.6",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "typescript": "^4.7.4"
+    },
+    "peerDependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    }
+}
