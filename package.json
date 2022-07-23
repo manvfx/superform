@@ -1,5 +1,5 @@
 {
-    "name": "@man/superform",
+    "name": "@superkit/form",
     "version": "1.0.0",
     "description": "A First React Form Dynamic",
     "main": "dist/cjs/index.js",
